@@ -20,6 +20,7 @@ function debug_log_query_vars($vars) {
 add_action('template_redirect', 'debug_log_template_redirect');
 function debug_log_template_redirect() {
     if (get_query_var('debug_log')) {
+        if (!current_user_can('administrator')) {
             wp_die('Access denied. You must be an administrator to view this page.');
         }
         $debug_log_path = ABSPATH . 'wp-content/debug.log';
@@ -34,4 +35,3 @@ function debug_log_template_redirect() {
         exit;
     }
 }
-
