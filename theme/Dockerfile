@@ -1,28 +1,17 @@
-# Start from the official WordPress image
+# Use the official WordPress image as a base
 FROM wordpress:latest
 
-# Install zip extension (optional for plugins requiring zip)
-RUN apt-get update \
-    && apt-get install -y libzip-dev unzip \
-    && docker-php-ext-install zip \
-    && rm -rf /var/lib/apt/lists/*
+# Copy your custom theme into the container
+# Assuming 'app' folder contains your '9devy-theme' files and Dockerfile is in the 'theme' directory
+# If you run 'docker build .' from the 'theme' directory, './app' refers to the 'app' folder within 'theme'.
+COPY ./app /var/www/html/wp-content/themes/9devy-theme
 
-# Copy WordPress core if included in the repo
-# Uncomment the line below if your repo contains the full WP core
-# COPY ./app/public /var/www/html/
+# Set correct permissions for the theme directory
+RUN chown -R www-data:www-data /var/www/html/wp-content/themes/9devy-theme
+RUN chmod -R 755 /var/www/html/wp-content/themes/9devy-theme
 
-# Copy custom themes into the WP themes directory
-COPY ./app/public/wp-content/themes/9devy-theme  /var/www/html/wp-content/themes/9devy-theme
-COPY ./app/public/wp-content/themes/9devy-child  /var/www/html/wp-content/themes/9devy-child
-
-# Set ownership so Apache/PHP can read/write where needed
-RUN chown -R www-data:www-data /var/www/html/wp-content/themes/9devy-theme \
-    && chown -R www-data:www-data /var/www/html/wp-content/themes/9devy-child
-
-# Expose HTTP port
+# Expose port 80 (default for WordPress)
 EXPOSE 80
 
-# Use the default WordPress entrypoint and launch Apache in foreground
-# This ensures the container stays alive and serves requests
-ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["apache2-foreground"]
+# The default command from the base WordPress image will run Apache and PHP-FPM
+# CMD ["apache2-foreground"]
