@@ -1,4 +1,3 @@
-function subscribeEmail(event) {
-  event.preventDefault();
-  alert("Subscribed! More updates coming soon.");
-}
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("9Devy site loaded.");
+});
