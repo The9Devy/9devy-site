@@ -1,0 +1,58 @@
+# 9Devy LLC Website
+
+This repository contains the custom WordPress theme and any custom plugins for the 9Devy LLC website.
+
+## Project Goals
+- Create a high-end, SEO-optimized website for 9Devy LLC, a premium creative studio.
+- Reflect the quality and professionalism of global luxury brands like Nike, Gucci, Cartier, and Apple.
+- Showcase a modern portfolio of videography, photography, and social media optimization with filterable gallery options.
+- Enable service sales directly from the site through a shop section with checkout links using Square, Stripe, or other payment gateways.
+- Build a loyal community with an email list or subscriber form.
+- Track traffic and engagement using Google Analytics, VIDIQ, and other analytics tools.
+- Ensure legal compliance with BOI reporting, EIN display (33-4380890), Terms of Service, Privacy Policy, and disclaimer pages.
+
+## Repository Structure
+- `README.md`: This file
+- `LICENSE`: License file (proprietary)
+- `.gitignore`: Files to ignore
+- `docs/`: Documentation
+  - `Terms of Service.md`
+  - `Privacy Policy.md`
+  - `Disclaimer.md`
+- `theme/9devy-theme/`: Custom WordPress theme
+  - `style.css`
+  - `functions.php`
+  - `index.php`
+  - `header.php`
+  - `footer.php`
+  - `assets/`
+    - `css/`
+    - `js/`
+    - `images/`
+  - `templates/`
+  - `inc/`
+- `plugins/`: Custom plugins (if any)
+- `.github/`
+  - `workflows/`
+  - `ISSUE_TEMPLATE/`
+
+## Setup Instructions
+1. Clone this repository to your local machine.
+2. Install WordPress on your server.
+3. Upload the `theme/9devy-theme/` folder to `wp-content/themes/` in your WordPress installation.
+4. Activate the theme in the WordPress dashboard.
+5. If there are custom plugins, upload them to `wp-content/plugins/` and activate them.
+6. Configure the theme settings as needed (e.g., set up menus, widgets, etc.).
+7. Add the necessary pages (About, Services, Portfolio, Blog, Shop, Contact, Legal Pages) using the WordPress admin.
+8. Populate the portfolio with projects, set up the shop with services, etc.
+9. Ensure all legal pages are created and published.
+10. Set up analytics and other integrations as required.
+
+## Contributing
+If you wish to contribute to this project, please open an issue first to discuss any changes you would like to make.
+
+## License
+This project is licensed under a proprietary license. For licensing inquiries, contact [contact information].
+
+## Contact
+For any questions or support, please contact [contact information].
