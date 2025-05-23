@@ -3,80 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>9Devy — Where the Wild Isn’t Lost</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>9Devy LLC – Where the Wild Isn’t Lost. Just Unseen.</title>
   <style>
     body {
-      font-family: 'DM Sans', sans-serif;
-      background-color: #000;
-      color: #fff;
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #000;
+      color: #fff6ed;
     }
-    h1, h2, h3 {
-      font-family: 'Cormorant Garamond', serif;
+    header {
+      height: 100vh;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #000), url('hero.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
-    .gold {
-      color: #C78500;
+    h1 {
+      font-size: 4rem;
+      background: linear-gradient(to right, #c78500, #ffcc00);
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: fadeIn 2s ease-in-out;
     }
-    .overlay {
-      background: linear-gradient(to bottom, rgba(0,0,0,0.5), #000);
+    em {
+      font-size: 1.5rem;
+      font-style: italic;
+      animation: fadeIn 3s ease-in-out;
     }
-    .card-shadow {
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      color: #c78500;
+      margin-bottom: 2rem;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .card {
+      background: #111;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      width: 300px;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      background: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: #aaa;
+    }
+
+    /* Mobile-first */
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+      em {
+        font-size: 1.2rem;
+      }
     }
   </style>
 </head>
-<body class="overflow-x-hidden">
-  <!-- Hero -->
-  <section class="relative h-screen flex items-center justify-center text-center">
-    <img src="images/hero.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Hero Background" />
-    <div class="absolute inset-0 overlay"></div>
-    <div class="z-10 px-6" data-aos="fade-up">
-      <h1 class="text-6xl md:text-7xl font-bold gold uppercase tracking-widest">9Devy</h1>
-      <p class="mt-4 text-xl text-gray-300 italic">Where the wild isn’t lost. Just unseen.</p>
-    </div>
-  </section>
+<body>
 
-  <!-- Services -->
-  <section class="py-20 px-6 bg-black">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-5xl font-bold gold uppercase mb-16" data-aos="fade-up">What We Do</h2>
-      <div class="grid md:grid-cols-3 gap-10">
-        <!-- Content Creation -->
-        <div class="rounded-xl overflow-hidden card-shadow group" data-aos="fade-up" data-aos-delay="100">
-          <img src="images/content.jpg" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" alt="Content Creation">
-          <div class="bg-[#111] p-6">
-            <h3 class="text-2xl font-semibold mb-2">Content Creation</h3>
-            <p class="text-gray-400 text-sm">YouTube, Reels, 4K video, and photography crafted to engage and convert.</p>
-          </div>
-        </div>
-        <!-- Brand Strategy -->
-        <div class="rounded-xl overflow-hidden card-shadow group" data-aos="fade-up" data-aos-delay="200">
-          <img src="images/brand.jpg" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" alt="Brand Strategy">
-          <div class="bg-[#111] p-6">
-            <h3 class="text-2xl font-semibold mb-2">Brand Strategy</h3>
-            <p class="text-gray-400 text-sm">Positioning, identity, content hooks, and a roadmap that drives ROI.</p>
-          </div>
-        </div>
-        <!-- Social Media -->
-        <div class="rounded-xl overflow-hidden card-shadow group" data-aos="fade-up" data-aos-delay="300">
-          <img src="images/social.jpg" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" alt="Social Media Marketing">
-          <div class="bg-[#111] p-6">
-            <h3 class="text-2xl font-semibold mb-2">Social Media Marketing</h3>
-            <p class="text-gray-400 text-sm">Performance-built strategies for visibility, virality, and conversions.</p>
-          </div>
-        </div>
+  <header>
+    <h1>9Devy</h1>
+    <em>Where the Wild Isn’t Lost. Just Unseen.</em>
+  </header>
+
+  <section class="section">
+    <h2>What We Do</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="content.jpg" alt="Content Creation" style="width:100%; border-radius:8px;">
+        <h3>Content Creation</h3>
+        <p>Stunning photo, video, and edits built for bold results.</p>
+      </div>
+      <div class="card">
+        <img src="strategy.jpg" alt="Brand Strategy" style="width:100%; border-radius:8px;">
+        <h3>Brand Strategy</h3>
+        <p>Strategic creative that aligns with your long-term vision.</p>
+      </div>
+      <div class="card">
+        <img src="social.jpg" alt="Social Media Marketing" style="width:100%; border-radius:8px;">
+        <h3>Social Media Marketing</h3>
+        <p>Targeted storytelling across every relevant platform.</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-[#000] text-gray-500 py-10 text-center text-sm border-t border-[#222]">
-    <p>&copy; 2025 9Devy. All rights reserved.</p>
+  <footer class="footer">
+    © 2025 9Devy. All rights reserved.
   </footer>
 
-  <script>AOS.init();</script>
 </body>
 </html>
