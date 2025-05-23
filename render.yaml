@@ -5,11 +5,11 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: WORDPRESS_DB_HOST
-        value: your_database_host
+        value: 173.29.195.50:4403
       - key: WORDPRESS_DB_NAME
-        value: your_database_name
+        value: 9devy_llc
       - key: WORDPRESS_DB_USER
-        value: your_database_user
+        value: 9devy_user
       - key: WORDPRESS_DB_PASSWORD
-        value: your_database_password
+        value: DevySecurePass123!
 
