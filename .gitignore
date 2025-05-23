@@ -1,0 +1,29 @@
+# Build tools and dependencies
+node_modules/
+vendor/
+
+# Windows-specific files
+Thumbs.db
+Desktop.ini
+
+# macOS-specific files
+.DS_Store
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Build directories
+build/
+dist/
+
+# Environment files
+.env
+
+# WordPress-specific ignores
+wp-content/uploads/
+wp-content/cache/
+*.sql
+wp-config.php

@@ -1,0 +1,21 @@
+/*
+ Theme Name: 9Devy Theme
+ Theme URI: https://9devy.com
+ Author: 9Devy LLC
+ Author URI: https://www.9devy.com/
+ Description: A custom WordPress theme for 9Devy LLC, a premium creative studio.
+ Version: 1.0.0
+ License: Proprietary
+ License URI: [Your License URL or leave blank]
+ Text Domain: 9devy-theme
+*/
+:root {
+  --primary-color: #000000; /* Black */
+  --accent-color: #FFD700; /* Gold */
+  --secondary-color: #FFFFF0; /* Ivory */
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
