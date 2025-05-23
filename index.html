@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>9Devy LLC — Where the Wild Isn’t Lost. Just Unseen.</title>
+  <title>9Devy LLC — Creative Growth</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'DM Sans', sans-serif;
@@ -15,58 +15,57 @@
       color: #fff;
     }
     h1, h2, h3 {
-      font-family: 'Libre Baskerville', serif;
-      letter-spacing: 0.5px;
+      font-family: 'Cormorant Garamond', serif;
     }
-    .gold-gradient {
-      background: linear-gradient(to right, #C78500, #e3b062);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .gold {
+      color: #C78500;
     }
     .overlay {
-      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8));
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), #000);
+    }
+    .card-shadow {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     }
   </style>
 </head>
-
 <body class="overflow-x-hidden">
-
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="relative h-screen flex items-center justify-center text-center">
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" class="absolute inset-0 w-full h-full object-cover" alt="Hero Image" />
+    <img src="https://images.unsplash.com/photo-1527255141490-3f4ec6c04b44?auto=format&fit=crop&w=1600&q=80" class="absolute inset-0 w-full h-full object-cover" />
     <div class="absolute inset-0 overlay"></div>
-    <div class="z-10 px-4">
-      <h1 class="text-6xl md:text-7xl font-extrabold gold-gradient uppercase tracking-wider" data-aos="fade-up">9Devy LLC</h1>
-      <p class="mt-6 text-xl text-gray-300 italic" data-aos="fade-up" data-aos-delay="200">Where the wild isn’t lost. Just unseen.</p>
+    <div class="z-10 px-6" data-aos="fade-up">
+      <h1 class="text-6xl md:text-7xl font-bold gold uppercase tracking-widest">9Devy LLC</h1>
+      <p class="mt-4 text-xl text-gray-300 italic">Where the wild isn’t lost. Just unseen.</p>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="py-24 px-6 bg-black">
+  <!-- Services -->
+  <section class="py-20 px-6 bg-black">
     <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-5xl font-bold gold-gradient uppercase mb-16" data-aos="fade-up">What We Do</h2>
+      <h2 class="text-5xl font-bold gold uppercase mb-16" data-aos="fade-up">What We Do</h2>
       <div class="grid md:grid-cols-3 gap-10">
-        <div class="relative rounded-xl overflow-hidden shadow-lg group" data-aos="zoom-in">
-          <img src="https://images.unsplash.com/photo-1580894732444-12fd6b9b1a06?auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" alt="Content Creation">
-          <div class="absolute inset-0 bg-black bg-opacity-70 p-8 flex flex-col justify-end">
-            <h3 class="text-2xl font-semibold text-white mb-2">Content Creation</h3>
-            <p class="text-gray-400 text-sm">Shorts, Reels, YouTube, 4K photography — storytelling that converts.</p>
+        <!-- Card 1 -->
+        <div class="rounded-xl overflow-hidden card-shadow group" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8e?auto=format&fit=crop&w=800&q=80" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="bg-[#111] p-6">
+            <h3 class="text-2xl font-semibold mb-2">Content Creation</h3>
+            <p class="text-gray-400 text-sm">YouTube, Reels, 4K video, photo — content designed to convert and impress.</p>
           </div>
         </div>
-
-        <div class="relative rounded-xl overflow-hidden shadow-lg group" data-aos="zoom-in" data-aos-delay="100">
-          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" alt="Brand Strategy">
-          <div class="absolute inset-0 bg-black bg-opacity-70 p-8 flex flex-col justify-end">
-            <h3 class="text-2xl font-semibold text-white mb-2">Brand Strategy</h3>
-            <p class="text-gray-400 text-sm">Positioning and identity systems that drive awareness and sales.</p>
+        <!-- Card 2 -->
+        <div class="rounded-xl overflow-hidden card-shadow group" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a0?auto=format&fit=crop&w=800&q=80" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="bg-[#111] p-6">
+            <h3 class="text-2xl font-semibold mb-2">Brand Strategy</h3>
+            <p class="text-gray-400 text-sm">Growth plans, brand identity, hooks, storytelling, and audience targeting.</p>
           </div>
         </div>
-
-        <div class="relative rounded-xl overflow-hidden shadow-lg group" data-aos="zoom-in" data-aos-delay="200">
-          <img src="https://images.unsplash.com/photo-1606761568499-6b4083f0f1a3?auto=format&fit=crop&w=800&q=80" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" alt="Social Media">
-          <div class="absolute inset-0 bg-black bg-opacity-70 p-8 flex flex-col justify-end">
-            <h3 class="text-2xl font-semibold text-white mb-2">Social Media Marketing</h3>
-            <p class="text-gray-400 text-sm">Platform-specific content + campaigns for algorithm-proof growth.</p>
+        <!-- Card 3 -->
+        <div class="rounded-xl overflow-hidden card-shadow group" data-aos="fade-up" data-aos-delay="300">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" class="w-full h-60 object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div class="bg-[#111] p-6">
+            <h3 class="text-2xl font-semibold mb-2">Social Media Marketing</h3>
+            <p class="text-gray-400 text-sm">Performance-driven strategy built for visibility, virality, and conversions.</p>
           </div>
         </div>
       </div>
@@ -74,12 +73,10 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-gray-500 py-10 text-center text-sm border-t border-[#222]">
+  <footer class="bg-[#000] text-gray-500 py-10 text-center text-sm border-t border-[#222]">
     <p>&copy; 2025 9Devy LLC. All rights reserved.</p>
   </footer>
 
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>
