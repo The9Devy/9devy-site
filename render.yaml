@@ -1,18 +1,15 @@
 services:
   - type: web
-    name: 9devy-site
+    name: 9devy-llc
     env: docker
-    repo: https://github.com/The9Devy/9devy-site
-    branch: main
-    plan: free
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: WORDPRESS_DB_HOST
-        fromService:
-          type: pserv
-          name: 9devy-db
-      - key: WORDPRESS_DB_USER
-        value: devy
-      - key: WORDPRESS_DB_PASSWORD
-        value: devypass123
+        value: your_database_host
       - key: WORDPRESS_DB_NAME
-        value: devydb
+        value: your_database_name
+      - key: WORDPRESS_DB_USER
+        value: your_database_user
+      - key: WORDPRESS_DB_PASSWORD
+        value: your_database_password
+
