@@ -1,14 +1,104 @@
 body {
-  background-color: #1B3C34;
-  color: #F5F5D5;
-  font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
-  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #111;
+  color: #eee;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1549921296-3a6b8af8c6c1') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-h1 {
-  font-family: 'Futura PT', sans-serif;
-  text-transform: uppercase;
-  color: #D4A017;
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+  position: relative;
+  color: #fff;
+  animation: fadeInUp 1.5s ease;
+}
+
+.hero-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  padding: 0.75em 2em;
+  background: linear-gradient(to right, #d4af37, #a67c00);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff8dc;
+  color: #000;
+}
+
+.section {
+  padding: 4em 2em;
+  background-color: #181818;
+}
+
+.section h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #d4af37;
+  margin-bottom: 1.5em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.card {
+  background: #222;
+  padding: 2em;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  border: 1px solid #444;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em;
+  background: #101010;
+  border-top: 1px solid #333;
+  color: #aaa;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
