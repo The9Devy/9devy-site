@@ -26,4 +26,4 @@ dist/
 wp-content/uploads/
 wp-content/cache/
 *.sql
-wp-config.php
+wp-config.phpmain
