@@ -52,4 +52,4 @@ Open an issue to discuss changes before contributing.
 Proprietary. Unauthorized copying or distribution is prohibited. Contact [your contact info] for inquiries.
 
 ## Contact
-For support, contact 9DevyLLC@gmail.com.
+For support, contact 9devyllc@gmail.com.
