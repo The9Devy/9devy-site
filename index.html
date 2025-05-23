@@ -4,13 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>9Devy LLC – Where the Wild Isn’t Lost. Just Unseen.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cochin&display=swap" rel="stylesheet">
   <style>
+    @font-face {
+      font-family: 'Bickham Script Pro';
+      src: local('Bickham Script Pro'), url('https://fonts.cdnfonts.com/s/10438/BickhamScriptProRegular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #000;
+      font-family: 'Cochin', serif;
+      background-color: #000;
       color: #fff6ed;
     }
+
     header {
       height: 100vh;
       background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #000), url('hero.jpg') no-repeat center center/cover;
@@ -19,67 +28,105 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 0 2rem;
     }
+
     h1 {
-      font-size: 4rem;
+      font-family: 'Bickham Script Pro', cursive;
+      font-size: 4.5rem;
       background: linear-gradient(to right, #c78500, #ffcc00);
       -webkit-background-clip: text;
       color: transparent;
       animation: fadeIn 2s ease-in-out;
+      letter-spacing: 1px;
     }
+
     em {
-      font-size: 1.5rem;
       font-style: italic;
+      font-size: 1.8rem;
       animation: fadeIn 3s ease-in-out;
+      color: #fff6ed;
     }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
     .section {
       padding: 4rem 2rem;
       text-align: center;
     }
+
     .section h2 {
-      font-size: 2rem;
+      font-family: 'Bickham Script Pro', cursive;
+      font-size: 2.5rem;
       color: #c78500;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
+
     .cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
     }
+
     .card {
       background: #111;
       padding: 1.5rem;
       border-radius: 10px;
       transition: transform 0.3s ease;
       width: 300px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     }
+
     .card:hover {
       transform: scale(1.05);
     }
+
+    .card h3 {
+      font-family: 'Bickham Script Pro', cursive;
+      font-size: 1.75rem;
+      color: #ffcc00;
+      margin: 1rem 0 0.5rem;
+    }
+
+    .card p {
+      font-family: 'Cochin', serif;
+      font-size: 1rem;
+      color: #ddd;
+    }
+
     .footer {
       background: #111;
       text-align: center;
       padding: 1rem;
       font-size: 0.875rem;
-      color: #aaa;
+      color: #888;
     }
 
-    /* Mobile-first */
+    /* Mobile */
     @media (max-width: 768px) {
       .cards {
         flex-direction: column;
         align-items: center;
       }
+
       h1 {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
+
       em {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+      }
+
+      .section {
+        padding: 3rem 1rem;
+      }
+
+      .card {
+        width: 90%;
       }
     }
   </style>
