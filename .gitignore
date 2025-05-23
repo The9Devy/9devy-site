@@ -1,0 +1,19 @@
+# Ignore build tools and dependencies
+node_modules/
+vendor/
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore build directories (if applicable)
+build/
+dist/
+
+# Ignore environment files
+.env
